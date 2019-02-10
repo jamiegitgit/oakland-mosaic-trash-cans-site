@@ -16,8 +16,12 @@ content = open('content/about-me.html').read()
 aboutme_html = top_template + top_header + content + bottom_footer + bottom_template
 open('docs/about-me.html', 'w+').write(aboutme_html)
 
-# And again, this time with art HTML code
-#content = open('middle_art.html').read()
-#art_html = top_template + content + bottom_template
-#open('art.html', 'w+').write(art_html)
+# And again, this time with gallery HTML code
+content = open('content/gallery.html').read()
+gallery_html = top_template + top_header + content + bottom_footer + bottom_template
+open('docs/gallery.html', 'w+').write(gallery_html)
 
+# And again, this time with contribute HTML code
+content = open('content/contribute.html').read()
+contribute_html = top_template + top_header + content + bottom_footer + bottom_template
+open('docs/contribute.html', 'w+').write(contribute_html)
